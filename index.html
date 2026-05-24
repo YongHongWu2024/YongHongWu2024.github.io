@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开发者 · 接单服务</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#0d1117;color:#c9d1d9;line-height:1.6}
+a{color:#58a6ff;text-decoration:none}
+.container{max-width:880px;margin:0 auto;padding:0 24px}
+/* Hero */
+.hero{padding:80px 0 50px;text-align:center}
+.hero h1{font-size:42px;font-weight:700;color:#f0f6fc;margin-bottom:8px}
+.hero .sub{font-size:18px;color:#8b949e}
+.hero .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:18px}
+.tag{background:rgba(88,166,255,.1);color:#58a6ff;border:1px solid rgba(88,166,255,.2);padding:4px 14px;border-radius:20px;font-size:13px}
+/* Sections */
+.section{padding:50px 0;border-top:1px solid rgba(240,246,252,.06)}
+.section h2{font-size:22px;color:#f0f6fc;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+.section h2 .icon{font-size:24px}
+/* Services */
+.service-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.service-card{background:rgba(22,27,34,.6);border:1px solid rgba(240,246,252,.06);border-radius:12px;padding:24px;transition:all .2s}
+.service-card:hover{border-color:rgba(88,166,255,.2);background:rgba(22,27,34,.9)}
+.service-card h3{font-size:16px;color:#f0f6fc;margin-bottom:6px}
+.service-card .price{font-size:20px;font-weight:700;color:#58a6ff;margin:8px 0 4px}
+.service-card .note{font-size:12px;color:#8b949e}
+/* Projects */
+.project-list{display:flex;flex-direction:column;gap:16px}
+.project-item{background:rgba(22,27,34,.6);border:1px solid rgba(240,246,252,.06);border-radius:12px;padding:20px 24px;display:flex;align-items:center;gap:20px;transition:all .2s}
+.project-item:hover{border-color:rgba(240,246,252,.1)}
+.project-icon{font-size:36px;flex-shrink:0;width:56px;text-align:center}
+.project-info{flex:1}
+.project-info h3{font-size:16px;color:#f0f6fc}
+.project-info p{font-size:13px;color:#8b949e;margin-top:2px}
+.project-tag{font-size:11px;background:rgba(240,246,252,.06);color:#8b949e;padding:2px 10px;border-radius:10px;white-space:nowrap}
+/* CTA */
+.cta{text-align:center;padding:60px 0 80px}
+.cta p{font-size:18px;color:#8b949e;margin-bottom:16px}
+.btn{display:inline-block;background:#238636;color:#fff;padding:12px 32px;border-radius:8px;font-size:16px;font-weight:600;transition:all .2s;border:none;cursor:pointer}
+.btn:hover{background:#2ea043;transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1px solid rgba(240,246,252,.2);color:#c9d1d9;margin-left:10px}
+.btn-outline:hover{background:rgba(240,246,252,.05);color:#f0f6fc}
+/* Footer */
+.footer{text-align:center;padding:30px 0;border-top:1px solid rgba(240,246,252,.06);color:#484f58;font-size:13px}
+/* Responsive */
+@media(max-width:600px){
+  .hero h1{font-size:28px}
+  .service-grid{grid-template-columns:1fr}
+  .project-item{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Hero -->
+  <header class="hero">
+    <h1>独立开发者 · 接单服务</h1>
+    <p class="sub">计算机专业 · 2年开发经验 · 按需定制 · 满意交付</p>
+    <div class="tags">
+      <span class="tag">Python 脚本</span>
+      <span class="tag">网页开发</span>
+      <span class="tag">Chrome 扩展</span>
+      <span class="tag">数据采集</span>
+      <span class="tag">自动化工具</span>
+      <span class="tag">小程序</span>
+    </div>
+  </header>
+
+  <!-- 服务与报价 -->
+  <section class="section">
+    <h2><span class="icon">&#128736;</span> 服务与报价</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Python 脚本定制</h3>
+        <p style="font-size:13px;color:#8b949e">办公自动化 · 文件批量处理 · 数据整理 · 定时任务</p>
+        <p class="price">¥50 起</p>
+        <p class="note">含源码 + 使用说明 + 7天修改</p>
+      </div>
+      <div class="service-card">
+        <h3>网页数据采集</h3>
+        <p style="font-size:13px;color:#8b949e">公开网页数据提取 · 导出Excel/CSV · 定期采集</p>
+        <p class="price">¥100 起</p>
+        <p class="note">含脚本 + 数据 + 说明文档</p>
+      </div>
+      <div class="service-card">
+        <h3>网站/网页制作</h3>
+        <p style="font-size:13px;color:#8b949e">个人主页 · 产品落地页 · 企业官网 · 响应式适配</p>
+        <p class="price">¥200 起</p>
+        <p class="note">含源码 + 部署指导 + 7天修改</p>
+      </div>
+      <div class="service-card">
+        <h3>Chrome 扩展开发</h3>
+        <p style="font-size:13px;color:#8b949e">浏览器插件定制 · 功能增强 · 自动化操作</p>
+        <p class="price">¥200 起</p>
+        <p class="note">含安装包 + 使用说明 + 7天修改</p>
+      </div>
+      <div class="service-card">
+        <h3>批量文件处理工具</h3>
+        <p style="font-size:13px;color:#8b949e">批量重命名 · 按类归档 · 查重清理 · 图片转换</p>
+        <p class="price">¥9.9</p>
+        <p class="note">Windows免安装 · 绿色版 · 即用</p>
+      </div>
+      <div class="service-card">
+        <h3>电脑远程协助</h3>
+        <p style="font-size:13px;color:#8b949e">系统优化 · 故障排查 · 软件安装 · 网络问题</p>
+        <p class="price">¥30/次</p>
+        <p class="note">解决不了不收费</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品展示 -->
+  <section class="section">
+    <h2><span class="icon">&#128187;</span> 作品展示</h2>
+    <div class="project-list">
+      <div class="project-item">
+        <span class="project-icon">&#128194;</span>
+        <div class="project-info">
+          <h3>批量文件管理工具箱</h3>
+          <p>Windows桌面工具，批量重命名、按类型/日期归档、MD5查重清理。Python + tkinter，打包为单文件exe免安装运行。</p>
+        </div>
+        <span class="project-tag">Python</span>
+      </div>
+      <div class="project-item">
+        <span class="project-icon">&#127760;</span>
+        <div class="project-info">
+          <h3>极简新标签页</h3>
+          <p>Chrome浏览器扩展，替换新标签页为时间+搜索+快捷链接面板。MV3规范，深色主题，可自定义链接和搜索引擎。</p>
+        </div>
+        <span class="project-tag">Chrome扩展</span>
+      </div>
+      <div class="project-item">
+        <span class="project-icon">&#128232;</span>
+        <div class="project-info">
+          <h3>自动填表工具</h3>
+          <p>Chrome扩展实现跨平台表单自动填写，URL预填+DOM注入方案，适配多种网页表单结构。</p>
+        </div>
+        <span class="project-tag">MV3 扩展</span>
+      </div>
+      <div class="project-item">
+        <span class="project-icon">&#127758;</span>
+        <div class="project-info">
+          <h3>无尽海匿名漂流瓶</h3>
+          <p>Web匿名社交应用，粘贴板轰炸+Chrome扩展+防休眠+SEO，含平台适配与分发策略。</p>
+        </div>
+        <span class="project-tag">全栈</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <p>有需求？告诉我你想做什么，我评估可行性和报价。</p>
+    <a class="btn" href="https://m.tb.cn/h.xxxxx" target="_blank">闲鱼下单</a>
+    <span style="display:inline-block;margin:0 12px;color:#484f58">或</span>
+    <span style="color:#8b949e;font-size:16px">直接在闲鱼搜索我的商品</span>
+  </div>
+
+  <footer class="footer">
+    计算机科学与技术专业 · 独立开发者 · 所有项目源码交付
+  </footer>
+</div>
+
+</body>
+</html>
